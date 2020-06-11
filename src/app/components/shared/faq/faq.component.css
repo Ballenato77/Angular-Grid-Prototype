@@ -1,0 +1,56 @@
+.Map{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+.Topcito{
+    margin-top: 0;
+}
+
+.Answer{
+    text-align:center;
+    font-family: 'Times New Roman';
+    margin-top: 20px;
+}
+
+.Title{
+    color:gold;
+    font-family: 'French Script MT';
+    font-size: 50px;
+}
+
+.Pet {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Room {
+  height: 150px;
+  width: 200px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Second{
+    background-color: coral;
+    border: dotted darkred;
+    align-content: center;
+    text-align: start;
+}
+
+.First{
+    background-color: cadetblue;
+    border: solid yellow;
+}
+
+.Third{
+  background-color: gold;
+  border: dashed black;
+}

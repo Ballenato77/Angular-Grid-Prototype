@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover, a:active {
+  color: lightgray;
+}
+
+.navigation-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media(max-width: 959px) {
+  mat-toolbar {
+    border-radius: 0px;
+  }
+}
+
+.Navbar_Title {
+  display: inline-block;
+  margin: 0 20px;
+  font-family: 'Bell MT';
+}
+

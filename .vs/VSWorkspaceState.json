@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\contact",
+    "\\src\\app\\components\\home",
+    "\\src\\app\\components\\shared",
+    "\\src\\app\\components\\shared\\faq",
+    "\\src\\assets",
+    "\\src\\assets\\Hotel-Images"
+  ],
+  "SelectedNode": "\\src\\app\\components\\shared\\faq\\faq.component.html",
+  "PreviewInSolutionExplorer": false
+}

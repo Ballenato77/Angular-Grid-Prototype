@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div>
+    <span>
+      <img src="../../assets/Logo.ico" width="40" height="40" alt="">
+    </span>
+  </div>
+  <a class="Navbar_Title" routerLink="/home" mat-buttom>
+    La Baleine Bleue
+  </a>
+  <span class="spacer"></span>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+    <a routerLink="/home" mat-button>
+      <mat-icon>home</mat-icon>
+      Home
+    </a>
+    <a routerLink="/faq" mat-button>
+      <mat-icon>feedback</mat-icon>
+      Preguntas Frecuentes
+    </a>
+    <a routerLink="/contact" mat-button>
+      <mat-icon>contact_support</mat-icon>
+      Contacto
+    </a>
+    <a routerLink="/about" mat-button>
+      <mat-icon>info</mat-icon>
+      Acerca de
+    </a>
+    <a routerLink="/login" mat-button>
+      <mat-icon>access_time</mat-icon>
+      Iniciar Sesión
+    </a>
+  </div>
+</mat-toolbar>

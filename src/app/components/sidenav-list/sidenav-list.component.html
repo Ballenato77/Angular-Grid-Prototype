@@ -1,0 +1,25 @@
+<mat-nav-list>
+  <mat-list-item class="Menu-Title">
+    <mat-icon>list</mat-icon>
+    <span class="nav-caption">Menu</span>
+  </mat-list-item>
+  <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+    <mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
+  </a>
+  <a mat-list-item routerLink="/faq" (click)="onSidenavClose()">
+    <mat-icon>feedback</mat-icon> <span class="nav-caption">Preguntas Frecuentes</span>
+  </a>
+  <a mat-list-item routerLink="/contact" (click)="onSidenavClose()">
+    <mat-icon>contact_support</mat-icon><span class="nav-caption">Contacto</span>
+  </a>
+  <a mat-list-item routerLink="/about" (click)="onSidenavClose()">
+    <mat-icon>info</mat-icon><span class="nav-caption">Acerca de</span>
+  </a>
+  <a mat-list-item routerLink="/login" (click)="onSidenavClose()">
+    <mat-icon>access_time</mat-icon><span class="nav-caption">Iniciar Sesión</span>
+  </a>
+  <a mat-list-item (click)="onSidenavClose()">
+    <mat-icon>done</mat-icon>
+    <span class="nav-caption">Cerrar</span>
+  </a>
+</mat-nav-list>
