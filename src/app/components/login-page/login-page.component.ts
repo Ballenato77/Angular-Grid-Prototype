@@ -1,4 +1,3 @@
-import { LoginModel } from '../models/login.model';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';

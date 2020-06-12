@@ -10,8 +10,8 @@ td {
   text-align: center;
 }
 .Title{
-    font-size:large;
-    
+  font-style: italic;
+  font-family: 'Adobe Devanagari';
 }
 @charset "UTF-8";
 

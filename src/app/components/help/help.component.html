@@ -1,0 +1,36 @@
+<form class="text-center border border-light p-5" action="#!">
+
+  <h2>¿En qué podemos Ayudarle?</h2>
+
+  <mat-form-field class="Le-Input" appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input type="text" id="name" matInput>
+  </mat-form-field>
+
+  <mat-form-field class="Le-Input" appearance="fill">
+    <mat-label>Correo</mat-label>
+    <input type="email" id="correo" matInput>
+  </mat-form-field>
+
+
+  <label>Motivo</label>
+  <br />
+  <mat-form-field class="LeOptions" appearance="fill">
+    <mat-label>Opciones</mat-label>
+    <mat-select>
+      <mat-option value="" disabled>Escoja una Opción</mat-option>
+      <mat-option value="1" selected>Dudas</mat-option>
+      <mat-option value="2">Reportar un Problema</mat-option>
+      <mat-option value="3">Solicitar Asistencia</mat-option>
+      <mat-option value="4">Solicitar Indicaciones Locales</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="Le-TextArea" appearance="fill">
+    <mat-label>Mensaje</mat-label>
+    <textarea matInput cols="6"></textarea>
+  </mat-form-field>
+
+  <button class="botoncito" type="submit" mat-button>Enviar</button>
+
+</form>

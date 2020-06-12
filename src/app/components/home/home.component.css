@@ -2,3 +2,10 @@
   width: 640px;
   height: 480px;
 }
+
+.Wellcome{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    color: aqua;
+}

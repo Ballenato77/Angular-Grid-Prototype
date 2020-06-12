@@ -46,6 +46,7 @@ import { ContactComponent } from './components/shared/contact/contact.component'
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { RegisterComponent } from './components/register/register.component';
+import { HelpComponent } from './components/help/help.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { RegisterComponent } from './components/register/register.component';
     ContactComponent,
     LoginPageComponent,
     RegisterComponent,
+    HelpComponent,
   ],
   imports: [
     BrowserModule,
