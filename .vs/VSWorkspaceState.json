@@ -11,6 +11,6 @@
     "\\src\\app\\components\\shared",
     "\\src\\app\\components\\sidenav-list"
   ],
-  "SelectedNode": "\\src\\assets\\Pet.png",
+  "SelectedNode": "\\src\\app\\components\\home\\home.component.css",
   "PreviewInSolutionExplorer": false
 }
