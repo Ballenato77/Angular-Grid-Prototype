@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\components",
-    "\\src\\app\\components\\contact",
+    "\\src\\app\\components\\about",
+    "\\src\\app\\components\\header",
+    "\\src\\app\\components\\help",
     "\\src\\app\\components\\home",
     "\\src\\app\\components\\shared",
-    "\\src\\app\\components\\shared\\faq",
-    "\\src\\assets",
-    "\\src\\assets\\Hotel-Images"
+    "\\src\\app\\components\\sidenav-list"
   ],
-  "SelectedNode": "\\src\\app\\components\\shared\\faq\\faq.component.html",
+  "SelectedNode": "\\src\\assets\\Pet.png",
   "PreviewInSolutionExplorer": false
 }

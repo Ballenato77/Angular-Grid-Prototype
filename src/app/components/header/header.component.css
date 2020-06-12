@@ -25,8 +25,8 @@ a:hover, a:active {
   font-family: 'Bell MT';
 }
 
-.Lema{
-    font-family: Pristina;
-    color: gold;
-    font-size: larger;
+.Lema {
+  display: inline-block;
+  font-family: Pristina;
+  color: gold;
 }
