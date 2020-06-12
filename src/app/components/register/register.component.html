@@ -1,0 +1,115 @@
+<div class="form-main">
+  <h2>Registro de un Nuevo Usuario</h2>
+  <form class="form-form"
+        [formGroup]="form">
+    <mat-form-field>
+      <input matInput #name spellcheck="false" placeholder="Nombre" formControlName="name" />
+      <mat-hint>
+        Name will never be shared or sold.
+      </mat-hint>
+      <mat-error>
+        {{ formErrors['name'] }}
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput #lastname spellcheck="false" placeholder="Apellidos" formControlName="lastname" />
+      <mat-hint>
+        Lastnames will never be shared or sold.
+      </mat-hint>
+      <mat-error>
+        {{ formErrors['lastname'] }}
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput
+             #email
+             spellcheck="false"
+             placeholder="Email"
+             formControlName="email">
+      <mat-hint>
+        Email will never be shared or sold.
+      </mat-hint>
+      <mat-error>
+        {{ formErrors['email'] }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput
+             spellcheck="false"
+             placeholder="Nombre de Usuario"
+             formControlName="userName">
+      <mat-hint>
+        User name allowed characters are letters and numbers only. No spaces.
+      </mat-hint>
+      <mat-error>
+        {{ formErrors['userName'] }}
+      </mat-error>
+    </mat-form-field>
+
+    <div formGroupName="passwordsGroup"
+         class="form-form">
+
+      <mat-form-field>
+        <input [type]="hidePassword ? 'password' : 'text'"
+               matInput
+               spellcheck="false"
+               placeholder="Contraseña"
+               formControlName="password">
+        <button mat-icon-button
+                tabindex="-1"
+                matSuffix
+                (click)="hidePassword = !hidePassword"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hidePassword">
+          <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        <mat-hint>
+          Password minimum length 6, requires one letter, one number, one special character !@#$%^&* no spaces.
+        </mat-hint>
+        <mat-error>
+          {{ formErrors['password'] }}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input [type]="hidePassword ? 'password' : 'text'"
+               matInput
+               spellcheck="false"
+               placeholder="Confirmar Contraseña"
+               [errorStateMatcher]="errorMatcher"
+               formControlName="confirmPassword">
+        <button mat-icon-button
+                tabindex="-1"
+                matSuffix
+                (click)="hidePassword = !hidePassword"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hidePassword">
+          <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        <mat-hint>
+          Confirm Password minimum length 6, requires one letter, one number, one special character !@#$%^&* no spaces.
+        </mat-hint>
+        <mat-error>
+          {{ formErrors['confirmPassword'] ? formErrors['confirmPassword'] : formErrors['passwordsGroup'] }}
+        </mat-error>
+      </mat-form-field>
+
+      <div class="form-button-row">
+        <button mat-raised-button
+                [disabled]="!form.valid"
+                (click)="registerClicked();"
+                color="primary">
+          Register
+        </button>
+
+        <button mat-raised-button
+                [routerLink]="['/home']"
+                color="primary">
+          Back
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+

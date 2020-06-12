@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -43,6 +44,8 @@ import { SidenavListComponent } from './components/sidenav-list/sidenav-list.com
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/shared/contact/contact.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { LoginPageComponent } from './components/login-page/login-page.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -54,9 +57,13 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     SidenavListComponent,
     FooterComponent,
     ContactComponent,
+    LoginPageComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
